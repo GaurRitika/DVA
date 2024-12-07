@@ -1,0 +1,71 @@
+/* Home.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+
+:root {
+  --primary-color: #8B5E3C;
+  --secondary-color: #66424D;
+  --background-light: #f5e6d3;
+  --text-dark: #594A4E;
+}
+
+body {
+  background: linear-gradient(135deg, #faf6f1 0%, #fff 100%);
+  min-height: 100vh;
+}
+
+/* Add smooth scrolling to the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+/* Add hover effects to buttons */
+.MuiButton-root {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.MuiButton-root:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Add subtle animation to icons */
+.MuiSvgIcon-root {
+  transition: transform 0.3s ease;
+}
+
+.MuiSvgIcon-root:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .MuiTypography-h3 {
+    font-size: 2rem !important;
+  }
+  
+  .MuiTypography-h5 {
+    font-size: 1.5rem !important;
+  }
+  
+  .MuiButton-root {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,60 @@
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(90deg, rgba(47, 128, 56, 0.8), rgba(141, 110, 99, 0.8));
+  padding: 15px 30px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.navbar .menu-button {
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.navbar .menu-button:hover {
+  transform: rotate(90deg);
+}
+
+.navbar .search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .search-bar input {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+}
+
+.navbar .search-bar input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar .menu-items {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .menu-items a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu-items a:hover {
+  color: #ffca28;
+}

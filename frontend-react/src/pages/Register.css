@@ -1,0 +1,125 @@
+body {
+    background: linear-gradient(135deg, #EFF4ED, #8FAB8F);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+  }
+  
+  .register-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .register-card h2 {
+    color: #2D5A27;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .register-card p {
+    font-size: 1rem;
+    color: #4A7856;
+    margin-bottom: 2rem;
+  }
+  
+  .register-form .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .register-form .form-group label {
+    display: block;
+    color: #2D5A27;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .register-form .form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #8FAB8F;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #2C3E2D;
+  }
+  
+  .register-btn {
+    background: #4A7856;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .register-btn:hover {
+    background: #2D5A27;
+  }
+  
+  .login-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .login-link a {
+    color: #2D5A27;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  .input-group {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .input-group input:focus {
+    border-color: #4285f4; /* Google's blue */
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #aaa;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  
+  /* Input animations */
+  .input-group input:focus ~ label,
+  .input-group input:valid ~ label {
+    top: -10px;
+    left: 10px;
+    color: #4285f4; /* Google's blue */
+    font-size: 12px;
+  }
+  

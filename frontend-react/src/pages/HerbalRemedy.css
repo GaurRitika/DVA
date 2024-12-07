@@ -1,0 +1,268 @@
+.herbal-remedy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #faf9f6;
+}
+
+.herbal-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.herbal-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.herbal-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.herbs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.herb-card {
+  
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.herb-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.herb-image-container {
+
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.herb-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.herb-card:hover .herb-image {
+  transform: scale(1.05);
+}
+
+.herb-info {
+  
+  padding: 1.5rem;
+}
+
+.herb-info h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.scientific-name {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.benefits {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.modal-overlay {
+  margin-top: 125px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.order{
+  margin-left: 50px;
+  background: #4A6741;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-content.detail-view {
+  background: white;
+  padding: 0;
+  border-radius: 15px;
+  max-width: 900px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.detail-image-container {
+  
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+.detail-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-info {
+  padding: 2rem;
+}
+
+.detail-info h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.detail-info .scientific-name {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.detail-info .description {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.benefits-detail {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.view-3d-button {
+  background: #4A6741;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-3d-button:hover {
+  background: #3d5635;
+  transform: translateY(-2px);
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  z-index: 1001;
+}
+
+.close-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.fullscreen-model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  z-index: 2000;
+}
+
+.fullscreen-model .close-button {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.fullscreen-model .close-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .herbal-header h1 {
+    font-size: 2rem;
+  }
+  
+  .herbs-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .herb-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .modal-content.detail-view {
+    width: 95%;
+  }
+
+  .detail-image-container {
+    height: 300px;
+  }
+
+  .detail-info {
+    padding: 1.5rem;
+  }
+
+  .detail-info h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .herbal-remedy-container {
+    padding: 1rem;
+  }
+  
+  .herb-card {
+    margin-bottom: 1rem;
+  }
+}

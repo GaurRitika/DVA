@@ -1,0 +1,156 @@
+/* DoshaAnalysis.css */
+.dosha-root {
+    min-height: 100vh;
+    background-image: url('/public/tree.png'); 
+    background-color: #f8f5f0;
+  }
+  
+  .dosha-background {
+    /* Optional: Add a subtle pattern */
+    min-height: 100vh;
+    padding: 40px 0;
+  }
+  
+  .dosha-main-container {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+  
+  .dosha-content-paper {
+    background: linear-gradient(to bottom, #ffffff, #fdfbf7) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .dosha-header {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, #f3e5d8, #f8f0e5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+  
+  .dosha-header-decoration {
+    margin-bottom: 1.5rem;
+  }
+  
+  .dosha-icon {
+    font-size: 3rem !important;
+    color: #9c6644;
+    animation: gentlePulse 3s infinite ease-in-out;
+  }
+  
+  .dosha-title {
+    color: #5d4037;
+    font-family: 'Cormorant Garamond', serif !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem !important;
+    font-size: 2.5rem !important;
+  }
+  
+  .dosha-subtitle {
+    color: #8d6e63;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1.1rem !important;
+    letter-spacing: 0.5px;
+  }
+  
+  .dosha-main-content {
+    padding: 3rem 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .dosha-loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f8f5f0;
+  }
+  
+  @keyframes gentlePulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #9c6644;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7d4e2d;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 960px) {
+    .dosha-main-container {
+      padding-top: 1rem;
+    }
+  
+    .dosha-content-paper {
+      margin: 1rem;
+    }
+  
+    .dosha-header {
+      padding: 2rem 1rem;
+    }
+  
+    .dosha-title {
+      font-size: 2rem !important;
+    }
+  
+    .dosha-main-content {
+      padding: 2rem 1rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .dosha-background {
+      padding: 20px 0;
+    }
+  
+    .dosha-title {
+      font-size: 1.8rem !important;
+    }
+  
+    .dosha-subtitle {
+      font-size: 1rem !important;
+    }
+  }
+  
+  /* Additional styles for form elements (if needed) */
+  .dosha-form-control {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .dosha-button {
+    background: linear-gradient(135deg, #9c6644, #7d4e2d) !important;
+    color: white !important;
+    padding: 12px 30px !important;
+    border-radius: 30px !important;
+    font-family: 'Poppins', sans-serif !important;
+    text-transform: none !important;
+    font-size: 1.1rem !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .dosha-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(156, 102, 68, 0.3) !important;
+  }
+  
