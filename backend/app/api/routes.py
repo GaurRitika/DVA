@@ -76,7 +76,7 @@ async def get_recommendations(dosha_type: str):
 @router.post("/personal-consultation")
 async def get_personal_consultation(consultation_data: ConsultationRequest):
     try:
-        recommendations = consultation_service.get_personalized_recommendations(consultation_data.model_dump())
+        recommendations = consultation_service.get_personalized_recommendations(consultation_data.dict())
         
         return {
             "status": "success",

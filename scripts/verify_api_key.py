@@ -32,7 +32,7 @@ def verify_groq_api_key():
             "https://api.groq.com/openai/v1/chat/completions",
             headers=headers,
             json={
-                "model": "llama-3.1-70b-versatile",
+                "model": "llama-3.3-70b-versatile",
                 "messages": [{"role": "user", "content": "test"}],
                 "max_tokens": 1
             }

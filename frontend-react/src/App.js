@@ -347,6 +347,9 @@ import MyHome from './pages/MyHome';
 // import New from './pages/New';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import AyurvedicCenters from './pages/AyurvedicCentres';
+import AyurvedaEducation from './pages/Education/AyurvedaEducation';
+
 
 const theme = createTheme({
   palette: {
@@ -459,6 +462,8 @@ function App() {
                 <Route path="dosha-analysis" element={<DoshaAnalysis />} />
                 <Route path="consultation" element={<PersonalConsultation />} />
                 <Route path="herbal-remedy" element={<HerbalRemedy />} />
+                <Route path="centers" element={<AyurvedicCenters />} />
+                <Route path="education" element={<AyurvedaEducation />} />
             </Routes>
         </ProtectedLayout>
     </ProtectedRoute>

@@ -140,6 +140,10 @@ import SpaIcon from '@mui/icons-material/Spa';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 // import EcoIcon from '@mui/icons-material/Eco';
 import { motion } from 'framer-motion';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import SchoolIcon from '@mui/icons-material/School';
+
+
 
 const drawerWidth = 300;
 
@@ -152,6 +156,16 @@ const Sidebar = ({ mobileOpen, onDrawerToggle }) => {
     { text: 'Dosha Analysis', icon: <AssessmentIcon />, path: '/dashboard/dosha-analysis' },
     { text: 'Personal Consultation', icon: <PersonIcon />, path: '/dashboard/consultation' },
     { text: 'Herbal Remedies', icon: <LocalHospitalIcon />, path: '/dashboard/herbal-remedy' },
+    {
+      text: 'Find Centers',
+      icon: <LocationOnIcon />,
+      path: 'centers'},
+      {
+        text: 'Education',
+        icon: <SchoolIcon />,
+        path: 'education'
+    }
+      
   ];
   
 
