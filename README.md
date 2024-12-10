@@ -29,6 +29,13 @@ A modern digital platform that combines traditional Ayurvedic wisdom with modern
 - Therapeutic treatments
 - Important health considerations
 
+### 4. Herbal Remedy
+- contain 3d model of various herbs
+
+### 5. Information of near by Ayurvedic Centres
+- contain near by Ayurvedic centers and hospitals
+
+
 ## Technology Stack
 
 ### Backend
@@ -37,15 +44,13 @@ A modern digital platform that combines traditional Ayurvedic wisdom with modern
 - Groq API: LLM integration for personalized recommendations
 
 ### Frontend
-- Streamlit: Interactive web interface
-- Python: Core programming language
-- Requests: HTTP library for API communication
+- Reactjs
 
 ## Setup Instructions
 
 1. Clone the repository:
-   git clone https://github.com/anuragsinghbhandari/Digital-Vedic-Ayurveda.git
-   cd Digital-Vedic-Ayurveda
+   git clone https://github.com/GaurRitika/DVA
+   cd DVA
 
 2. Create and activate virtual environment:
    For Windows:
@@ -69,15 +74,43 @@ A modern digital platform that combines traditional Ayurvedic wisdom with modern
    python scripts/verify_api_key.py
 
 6. Start the backend server:
+firstly confirm ,you must be inside the DVA folder
    cd backend
    uvicorn app:app --reload --host 0.0.0.0 --port 8000
 
-7. Start the frontend (in a new terminal):
-   cd frontend
-   streamlit run app.py
+7. start the mybackend server(in a new terminal):
+firstly confirm ,you must be inside the DVA folder
+ - 1.cd mybackend
+ - 2.npm install
+ - 3.npm run dev  
 
-8. Access the application:
-   - Frontend: http://localhost:8501
+
+8. start the chatbot(in a new terminal):
+firstly confirm ,you must be inside the DVA folder
+- 1. cd mybackend
+- 2. cd final_bot
+- 3. venv\Scripts\Activate
+- 4. pip install -r requirements.txt
+- 5. python main.py
+
+9. Start the frontend-react (in a new terminal):
+firstly confirm ,you must be inside the DVA folder
+- 1.venv\Scripts\activate
+- 2.cd frontend-react
+- 3.npm install
+- 4.npm start
+
+10. create one env file in the root directory , that means under the DVA folder , that contain your Groq api and REACT_APP_API_BASE_URL=http://localhost:8000/api/v1
+
+11. create another env file under the mybackend folder  , that contain MONGO_URI = your answer
+
+PORT = 5000
+
+
+JWT_SECRET = youranswer 
+
+12. Access the application:
+   - Frontend: http://localhost:3000
    - API Documentation: http://localhost:8000/docs
 
 ## System Requirements
