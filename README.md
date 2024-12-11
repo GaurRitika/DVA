@@ -74,9 +74,9 @@ A modern digital platform that combines traditional Ayurvedic wisdom with modern
    python scripts/verify_api_key.py
 
 6. Start the backend server:
-firstly confirm ,you must be inside the DVA folder
-   cd backend
-   uvicorn app:app --reload --host 0.0.0.0 --port 8000
+firstly confirm ,you must be inside the DVA folder,
+ -  cd backend,
+ -  uvicorn app:app --reload --host 0.0.0.0 --port 8000
 
 7. start the mybackend server(in a new terminal):
 firstly confirm ,you must be inside the DVA folder
